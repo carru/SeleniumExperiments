@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TouringSuite" duration-ms="6663" started-at="2016-02-02T22:00:24Z" finished-at="2016-02-02T22:00:31Z">
+    <groups>
+    </groups>
+    <test name="TouringTest" duration-ms="6663" started-at="2016-02-02T22:00:24Z" finished-at="2016-02-02T22:00:31Z">
+      <class name="com.carru.testNGSample.TouringTest">
+        <test-method status="PASS" signature="setupBeforeSuite(java.lang.String)[pri:0, instance:com.carru.testNGSample.TouringTest@e580929]" name="setupBeforeSuite" is-config="true" duration-ms="5744" started-at="2016-02-02T23:00:18Z" finished-at="2016-02-02T23:00:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.touring-assurances.be/auto/quick-quote/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeSuite -->
+        <test-method status="PASS" signature="step1Age(java.lang.String)[pri:0, instance:com.carru.testNGSample.TouringTest@e580929]" name="step1Age" duration-ms="185" started-at="2016-02-02T23:00:24Z" description="Step 1: Age" finished-at="2016-02-02T23:00:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[25]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step1Age -->
+        <test-method status="PASS" signature="waitAnimations()[pri:0, instance:com.carru.testNGSample.TouringTest@e580929]" name="waitAnimations" is-config="true" duration-ms="637" started-at="2016-02-02T23:00:24Z" finished-at="2016-02-02T23:00:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitAnimations -->
+        <test-method status="PASS" signature="step2Bonus(java.lang.String, java.lang.String)[pri:0, instance:com.carru.testNGSample.TouringTest@e580929]" name="step2Bonus" duration-ms="114" started-at="2016-02-02T23:00:25Z" description="Step 2: Bonus" depends-on-methods="com.carru.testNGSample.TouringTest.step1Age" finished-at="2016-02-02T23:00:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[25]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step2Bonus -->
+        <test-method status="PASS" signature="waitAnimations()[pri:0, instance:com.carru.testNGSample.TouringTest@e580929]" name="waitAnimations" is-config="true" duration-ms="624" started-at="2016-02-02T23:00:25Z" finished-at="2016-02-02T23:00:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitAnimations -->
+        <test-method status="PASS" signature="step3PostalCode(java.lang.String, java.lang.String)[pri:0, instance:com.carru.testNGSample.TouringTest@e580929]" name="step3PostalCode" duration-ms="148" started-at="2016-02-02T23:00:25Z" description="Step 3: Portal code" depends-on-methods="com.carru.testNGSample.TouringTest.step2Bonus" finished-at="2016-02-02T23:00:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step3PostalCode -->
+        <test-method status="PASS" signature="waitAnimations()[pri:0, instance:com.carru.testNGSample.TouringTest@e580929]" name="waitAnimations" is-config="true" duration-ms="731" started-at="2016-02-02T23:00:26Z" finished-at="2016-02-02T23:00:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitAnimations -->
+        <test-method status="PASS" signature="step4Car(java.lang.String, java.lang.String)[pri:0, instance:com.carru.testNGSample.TouringTest@e580929]" name="step4Car" duration-ms="193" started-at="2016-02-02T23:00:26Z" description="Step 4: Car manufacturers" depends-on-methods="com.carru.testNGSample.TouringTest.step3PostalCode" finished-at="2016-02-02T23:00:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TACK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step4Car -->
+        <test-method status="PASS" signature="waitAnimations()[pri:0, instance:com.carru.testNGSample.TouringTest@e580929]" name="waitAnimations" is-config="true" duration-ms="633" started-at="2016-02-02T23:00:27Z" finished-at="2016-02-02T23:00:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitAnimations -->
+        <test-method status="PASS" signature="step5Value(java.lang.String, java.lang.String)[pri:0, instance:com.carru.testNGSample.TouringTest@e580929]" name="step5Value" duration-ms="144" started-at="2016-02-02T23:00:27Z" description="Step 5: Value" depends-on-methods="com.carru.testNGSample.TouringTest.step4Car" finished-at="2016-02-02T23:00:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[25000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TACK]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step5Value -->
+        <test-method status="PASS" signature="waitAnimations()[pri:0, instance:com.carru.testNGSample.TouringTest@e580929]" name="waitAnimations" is-config="true" duration-ms="633" started-at="2016-02-02T23:00:27Z" finished-at="2016-02-02T23:00:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitAnimations -->
+        <test-method status="PASS" signature="step6Profile(java.lang.String, java.lang.String)[pri:0, instance:com.carru.testNGSample.TouringTest@e580929]" name="step6Profile" duration-ms="114" started-at="2016-02-02T23:00:28Z" description="Step 6: Profile" depends-on-methods="com.carru.testNGSample.TouringTest.step5Value" finished-at="2016-02-02T23:00:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[F]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[25000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step6Profile -->
+        <test-method status="PASS" signature="waitAnimations()[pri:0, instance:com.carru.testNGSample.TouringTest@e580929]" name="waitAnimations" is-config="true" duration-ms="630" started-at="2016-02-02T23:00:28Z" finished-at="2016-02-02T23:00:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitAnimations -->
+        <test-method status="PASS" signature="step7Email(java.lang.String, java.lang.String)[pri:0, instance:com.carru.testNGSample.TouringTest@e580929]" name="step7Email" duration-ms="164" started-at="2016-02-02T23:00:29Z" description="Step 7: Email" depends-on-methods="com.carru.testNGSample.TouringTest.step6Profile" finished-at="2016-02-02T23:00:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[asd@asd.asd]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[F]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step7Email -->
+        <test-method status="PASS" signature="waitAnimations()[pri:0, instance:com.carru.testNGSample.TouringTest@e580929]" name="waitAnimations" is-config="true" duration-ms="1686" started-at="2016-02-02T23:00:29Z" finished-at="2016-02-02T23:00:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitAnimations -->
+        <test-method status="PASS" signature="waitAnimations()[pri:0, instance:com.carru.testNGSample.TouringTest@e580929]" name="waitAnimations" is-config="true" duration-ms="13" started-at="2016-02-02T23:00:31Z" finished-at="2016-02-02T23:00:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitAnimations -->
+        <test-method status="PASS" signature="step8Prices()[pri:0, instance:com.carru.testNGSample.TouringTest@e580929]" name="step8Prices" duration-ms="0" started-at="2016-02-02T23:00:31Z" description="Step 8: Results" depends-on-methods="com.carru.testNGSample.TouringTest.step7Email" finished-at="2016-02-02T23:00:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step8Prices -->
+        <test-method status="PASS" signature="setupAfterSuite()[pri:0, instance:com.carru.testNGSample.TouringTest@e580929]" name="setupAfterSuite" is-config="true" duration-ms="309" started-at="2016-02-02T23:00:31Z" finished-at="2016-02-02T23:00:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupAfterSuite -->
+      </class> <!-- com.carru.testNGSample.TouringTest -->
+    </test> <!-- TouringTest -->
+  </suite> <!-- TouringSuite -->
+</testng-results>
