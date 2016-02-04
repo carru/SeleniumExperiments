@@ -1,13 +1,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="TouringSuite" parallel="false">
 	<parameter name="url" value="https://www.touring-assurances.be/auto/quick-quote/"/>
+	
 	<parameter name="age" value="25"/>
 	<parameter name="bonus" value="0"/>
 	<parameter name="postalCode" value="1000"/>
 	<parameter name="carManufacturer" value="TACK"/>
 	<parameter name="value" value="25000"/>
 	<parameter name="profile" value="F"/>
-	<parameter name="email" value="asd@asd.asd"/>
+	<parameter name="email" value="no@disponible.es"/>
+	<parameter name="priceRC" value="526"/>
+	<parameter name="priceRC_PO" value="870"/>
+	<parameter name="priceRC_FO" value="1463"/>
+		
 	<test name="TouringTest">
 		<classes>
 			<class name="com.carru.testNGSample.TouringTest" />

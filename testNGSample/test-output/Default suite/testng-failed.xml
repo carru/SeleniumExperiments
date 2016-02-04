@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <parameter name="carManufacturer" value="TACK"/>
-  <parameter name="bonus" value="0"/>
-  <parameter name="postalCode" value="1000"/>
-  <parameter name="profile" value="F"/>
-  <parameter name="value" value="25000"/>
-  <parameter name="url" value="https://www.touring-assurances.be/auto/quick-quote/"/>
-  <parameter name="age" value="25"/>
-  <parameter name="email" value="a@b.c"/>
   <test verbose="2" name="Default test">
     <classes>
       <class name="com.carru.testNGSample.TouringTest"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.carru.testNGSample.TouringTest">
+        <methods>
+          <include name="step7Email"/>
+          <include name="step8Prices"/>
+          <include name="step4Car"/>
+          <include name="step1Age"/>
+          <include name="step5Value"/>
+          <include name="setupAfterSuite"/>
+          <include name="step2Bonus"/>
+          <include name="step6Profile"/>
+          <include name="step3PostalCode"/>
+        </methods>
+      </class> <!-- com.carru.testNGSample.TouringTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

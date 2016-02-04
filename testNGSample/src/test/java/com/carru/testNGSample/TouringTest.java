@@ -29,11 +29,6 @@ public class TouringTest {
 	@AfterMethod
 	public void waitAnimations() {
 		// Wait for animations to finish
-		
-//		while((Boolean)((JavascriptExecutor)driver).executeScript("return $(':animated').length == 0 ")) {
-//			//System.out.println("waiting...");
-//		}
-		
 		(new WebDriverWait(driver, 4)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='item active']")));
 	}
 
@@ -132,8 +127,16 @@ public class TouringTest {
 		driver.findElement(By.xpath("//input[@class='btn next get-tarif']")).click();
 	}
 
+	@Parameters({ "priceRC", "priceRC_PO", "priceRC_FO" })
 	@Test(dependsOnMethods = { "step7Email" }, alwaysRun = true, description = "Step 8: Results")
-	public void step8Prices() {
+	public void step8Prices(String expectedPriceRC, String expectedPriceRC_PO, String expectedPriceRC_FO) {
+		// Check prices
+		String priceRC = driver.findElement(By.xpath("//div[@id='formuleRC']/h4/span[@class='price']")).getText();
+		String priceRC_PO = driver.findElement(By.xpath("//div[@id='formuleRC_PO']/h4/span[@class='price']")).getText();
+		String priceRC_FO = driver.findElement(By.xpath("//div[@id='formuleRC_FO']/h4/span[@class='price']")).getText();
+		Assert.assertEquals(priceRC, expectedPriceRC);
+		Assert.assertEquals(priceRC_PO, expectedPriceRC_PO);
+		Assert.assertEquals(priceRC_FO, expectedPriceRC_FO);
 	}
 
 	@Parameters({ "url" })
